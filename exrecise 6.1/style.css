@@ -1,0 +1,17 @@
+#primary-border {
+  border-color: red;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+#diffrent-font{
+  font-weight: bold;
+  font-style: italic;
+}
+#background-div{
+  background-color : black;
+  color : white;
+  font-family : monospace;
+}

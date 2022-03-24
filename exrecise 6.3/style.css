@@ -1,0 +1,60 @@
+body{
+  background-image: url('/colorforbackground.webp');
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+#main-header{
+ font-weight: bold;
+ font-family: 'Open Sans', sans-serif;
+ text-align: center;
+}
+.card{
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  
+}
+#content{
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-bottom: 30px;
+}
+#footer{
+  text-align: center;
+  background-color: rgb(18, 18, 19);
+  height: auto;
+  width: auto;
+  font-family: 'Open Sans', sans-serif;
+  color: rgb(224, 233, 241);
+  align-items: center;
+}
+#contact{
+  font-size:20px ;
+  margin-bottom: 20px;
+  
+}
+#social-nav {
+ 
+}
+.socialmediaicon{
+  display:inline ;
+  align-items: center;
+  justify-items: center;
+  margin: 20px;
+  text-decoration: none;
+  color: aliceblue;
+
+}
+.socialmediaicon a:hover i{
+  color: aqua;
+}
+#copyright{
+  background-color: black;
+  margin-top: 30px;
+  font-size: 10px;
+  padding: 10px;
+}
+#name{
+  color: grey;
+}
