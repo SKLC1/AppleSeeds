@@ -1,31 +1,28 @@
+
 #Header{
   background-color: yellow;
 }
 #Side{
   background-color: green;
+  width: 50%;
+  height: 100px;
+  float: left;
 }
 #Main{
   background-color: purple;
-  height: 150;
-  width: 150;
+  width: 50%;
+  height: 100px;
+  float: right;
+  
 }
 #Footer{
   background-color: blue;
 }
 #wrapper{
   max-width: 960px;
-  margin: auto;
+  margin: 0 300px;
 }
 .box{
-  border-color: black;
-  border-width: 1px;
-  border-style: solid;
   text-align: center;
-  padding: 5px;
-  margin: 5px;
   
-}
-*{
-  padding: 0;
-  box-sizing: border-box;
 }
