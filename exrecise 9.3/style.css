@@ -1,0 +1,31 @@
+.container{
+  background-color: lightgrey;
+  width: 500px;
+  height: 400px;
+}
+.box{
+  border:5px solid black;
+  position: absolute;
+  background-color: aliceblue;
+}
+#div1{
+ width: 200px;
+ height: 200px;
+}
+#div2{
+  width: 200px;
+ height: 200px;
+ top: 100px;
+ left:100px;
+}
+#div3{
+  width: 450px;
+  height: 100px;
+  top: 250px;
+}
+#div4{
+  width:50px;
+  height: 400px;
+  left: 350px;
+}
+

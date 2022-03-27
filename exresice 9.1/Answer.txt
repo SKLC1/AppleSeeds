@@ -1,0 +1,12 @@
+We were not able to move the "inner" element because it's parent
+object "outer" had the default Position value of "relative".
+
+which caused "inner" object to to inherit this static Positioning value
+bacause his position value was "Absolute"
+which inherits the parent's Position Value.
+
+therefore it was not able to inherit the tblr(in this case top) values.
+
+we can fix it by adding a positioning value of 'absolute' to the 'inner' 
+object in order to make him relative in position to its parent elemant
+soltion example is attached beloew.
