@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container{
+      margin: 0px 40px;
+    }
+    .target:hover::after{
+      content: 'badass tool top' attr(data-tooltip);
+      padding: 5px;
+    }
+    
+    .target::after{
+      position: absolute;
+      content: '';
+      transform: translateX(-50px) translateY(-20px);
+      background-color: yellow;
+      border: 1px dotted black;
+      border-radius: 10px;
+      font-size: 10px;
+
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Text</h1>
+    <p><a href="#" class="target">Lorem</a>  ipsum dolor sit, amet consectetur adipisicing elit. Nemo, magnam. Ipsam soluta incidunt<br>
+      <br> earum obcaecati laboriosam omnis voluptatum esse delectus quasi velit voluptas <a href="#" class="target">libero</a> vero explicabo facere, nihil accusamus doloribus.</p>
+    <br>
+    <p><a href="#" class="target">Lorem</a>  ipsum dolor sit, amet consectetur adipisicing elit. Nemo, magnam. Ipsam soluta incidunt<br>
+      <br> earum obcaecati laboriosam omnis voluptatum esse delectus quasi velit voluptas <a href="#" class="target">libero</a> vero explicabo facere, nihil accusamus doloribus.</p>
+    </div>
+</body>
+</html>
+
