@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    logo{
+      font-size: 40px;
+      font-weight: 600;
+    }
+    .header{
+     background-color: rgb(49, 151, 143);
+     padding: 30px;
+    }
+    .navbar{
+      display: flex;
+      flex-direction: row;
+      align-items: end;
+    }
+    .nav-list{
+      display: flex;
+      margin-left: auto;
+      list-style: none;
+      
+    }
+    .nav-item{
+      margin:10px;
+    }
+    @media (max-width: 500px) {
+      .navbar{
+        display: flex;
+        flex-direction: column;
+      }
+      .nav-list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+      }
+      logo{
+        margin: auto;
+      }
+    }
+    *{
+      font-family: Arial, Helvetica, sans-serif;
+      
+    }
+    body{
+      background-color: rgb(184, 184, 184);
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar">
+      <logo>GATITO'S</logo>
+      <ul class="nav-list">
+        <li class="nav-item">Home</li>
+        <li class="nav-item">Donate</li>
+        <li class="nav-item">About</li>
+      
+      </ul>
+    </nav>
+  </header>
+</body>
+</html>

@@ -1,11 +1,10 @@
-/* Reset */
+/* reset */
 * {
   margin: 0;
   padding:0;
   box-sizing: border-box;
 }
 
-/* Main Styling */
 html,body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.7em;
@@ -24,7 +23,7 @@ p {
   margin: 10px 0;
 }
 
-/* Utility Classes */
+/* utility */
 .container {
   margin: auto;
   max-width: 1100px;
@@ -83,12 +82,12 @@ p {
   font-size: 40px;
 }
 
-/* Padding */
+/* padding */
 .py-1 { padding: 10px 0; }
 .py-2 { padding: 20px 0; }
 .py-3 { padding: 30px 0; }
 
-/* Navbar */
+/* navbar */
 #navbar {
   background: #333;
   color: #fff;
@@ -125,7 +124,7 @@ p {
   color: #f7c08a;
 }
 
-/* Showcase */
+/* showcase */
 #showcase {
   background: url('../img/showcase.jpg') no-repeat center center/cover;
   height: 600px;
@@ -147,7 +146,7 @@ p {
   line-height: 1.7em;
 }
 
-/* Home Info */
+/* info */
 #home-info {
   height: 400px;
 }
@@ -172,7 +171,7 @@ p {
   padding-bottom: 30px;
 }
 
-/* Features */
+/* featueres */
 .box {
   float: left;
   width: 33.3%;
@@ -204,8 +203,8 @@ p {
   min-height: 100%;
 }
 
-/* Testimonials */
-#testimonials {
+/* testmonials */
+#testimonials { 
   height: 600px;
   background: url('../img/test-bg.jpg') no-repeat center center/cover;
   padding-top: 100px;
@@ -231,7 +230,7 @@ p {
   border-radius: 50%;
 }
 
-/* Contact Form */
+/* Contact */
 #contact-form .form-group {
   margin-bottom: 20px;
 }
@@ -258,7 +257,7 @@ p {
   border-color: #f7c08a;
 }
 
-/* Footer */
+/* footer */
 #main-footer {
   text-align: center;
   background: #444;

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+     *{
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+     }
+     body{
+       background-color: rgb(77, 88, 94);
+     }
+     .container{
+       margin: 50px;
+       display: flex;
+       flex-wrap: wrap;
+     }
+     /* spinner 1 */
+    .spinner1{
+      margin: 20px;
+      width: 100px;
+      height: 100px;
+      background-color: rgb(77, 88, 94);
+      border-radius: 50%;
+      position: relative;
+    }
+    .spinner1::before{
+      content: '';
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      top: -2px;
+      left: -2px;
+      border-radius: 50%;
+      border: solid gainsboro;
+      border-top-color: coral;
+      animation: spin 1s linear infinite;
+    }
+    /* spinner 2 */
+    .spinner2{
+      margin: 20px;
+      width: 100px;
+      height: 100px;
+      background-color: rgb(77, 88, 94);;
+      border-radius: 50%;
+      position: relative;
+    }
+    .spinner2::before{
+      content: '';
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      top: -2px;
+      left: -2px;
+      border-radius: 50%;
+      border-top: 2px solid coral;
+      border-right: 2px solid transparent;
+      animation: spin 1s linear infinite;
+    }
+
+    /* spinner 1 & 2 animations */
+    @keyframes spin {
+      100%{
+        transform: rotate(360deg)
+      }
+       
+    }
+    
+    /* spinner 3 */
+    .spinner-dot-list{
+      display: flex;
+    }
+    .spinner-dot{
+      width:30px;
+      height:30px;
+      margin: 5px;
+      background-color: white;
+      border-radius: 50%;
+      position: relative;
+    }
+    /* animation */
+    .spinner-dot{
+      animation-name: bounce;
+      animation: bounce 3s infinite;
+    }
+   
+    @keyframes bounce{
+      05%{
+        background-color: aqua;
+      }
+      100%{
+        background-color:white;
+      }
+    }
+   .spinner-dot:nth-child(1){
+     animation-delay: 1s;
+   }
+   .spinner-dot:nth-child(2){
+     animation-delay: 2s;
+   }
+   /* spinner 4 */
+   .spinner-dot2{
+      width:30px;
+      height:30px;
+      margin: 5px;
+      background-color: white;
+      border-radius: 50%;
+      position: relative;
+    }
+    .spinner-dot2{
+      animation-name: bounce2;
+      animation: bounce2 3s infinite;
+    }
+
+   @keyframes bounce2{
+      05%{
+        transform: translateY(-10px);
+      }
+      50%{
+        transform: translateY(0px);
+      }
+    }
+   .spinner-dot2:nth-child(1){
+     animation-delay: 1s;
+   }
+   .spinner-dot2:nth-child(2){
+     animation-delay: 2s;
+   }
+ 
+
+  </style>
+</head>
+<body>
+  <div class="container">
+   <div class="spinner1"></div>
+   <div class="spinner2"></div>
+
+   <div class="spinner3">
+     <ul class="spinner-dot-list">
+       <il class="spinner-dot" id="ball-1"></il>
+       <il class="spinner-dot" id="ball-2"></il>
+       <il class="spinner-dot" id="ball-3"></il>
+     </ul>
+   </div>
+   <div class="spinner3">
+    <ul class="spinner-dot-list">
+      <il class="spinner-dot2" id="ball-1"></il>
+      <il class="spinner-dot2" id="ball-2"></il>
+      <il class="spinner-dot2" id="ball-3"></il>
+    </ul>
+  </div>
+  </div>
+</body>
+</html>
