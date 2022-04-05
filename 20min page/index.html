@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+      .nav-container{
+        display: flex;
+        background-color: rgb(129, 34, 202);
+        padding: 20px;
+      }
+      .nav-list{
+        display: flex;
+        list-style: none;
+      }
+      .nav-item{
+        margin:10px;
+        color: #fff;
+        cursor: pointer;
+      }
+      @media (max-width:500px) {
+        .nav-container{
+          flex-direction: column;
+        }
+        .nav-list{
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+        .nav-item{
+          background-color: rgb(91, 91, 91);
+          padding: 10px;
+          border-radius: 20px;
+        }
+      }
+      .header{
+        height: 20vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .welcome{
+        font-size: 50px;
+        color: blueviolet;
+        text-decoration: underline;
+      }
+      .main-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .box{
+        background-color: blueviolet;
+        width: 80vw;
+        height: fit-content;
+        padding: 20px;
+        margin: 10px;;
+        border-radius: 30px;
+      }
+
+      .grid-container{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 10px;
+        margin: 30px;
+      }
+      .square{
+        border: solid;
+        width: 100px;
+        height: 100px;
+      }
+  </style>
+</head>
+<body>
+  <nav class="nav-container">
+    <ul class="nav-list">
+      <li class="nav-item">Login</li>
+      <li class="nav-item">Home</li>
+      <li class="nav-item">About Me</li>
+    </ul>
+  </nav>
+  <header class="header">
+      <div class="welcome">Welcome Home</div>
+  </header>
+  <main class="main-container">
+    <div class="name-holder">Put Your Name Here</div>
+    <div class="box" id="box-1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi repudiandae animi facere, sunt officiis illum.</div>
+    <div class="box" id="box-2">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit similique praesentium maxime aspernatur ipsam perspiciatis repellendus quam, debitis optio. Earum quod dicta dolorem recusandae nobis quisquam! Officia ut possimus eius cupiditate at et voluptates, non iure inventore dolorum animi sint.
+    </div>
+  </main>
+  <footer>
+    <div class="grid-container">
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+    </div>
+  </footer>
+</body>
+</html>
